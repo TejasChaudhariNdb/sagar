@@ -49,7 +49,7 @@
         // will first fade out the loading animation
      $("#preloader").fadeOut();
         // will fade out the whole DIV that covers the website.
-     $("#status").fadeOut(9000);
+     $("#status").fadeOut(1000);
 })
 
 
