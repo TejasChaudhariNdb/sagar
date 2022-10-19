@@ -4037,3 +4037,7 @@ section.error-404 .page-content p {
 	margin-bottom: 10%;
 
 }
+
+.client-thumbnail img{
+	object-fit: contain;
+}

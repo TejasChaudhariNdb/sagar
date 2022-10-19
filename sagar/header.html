@@ -43,7 +43,9 @@
                                 <div class="submit_field"><button type="submit">Search</button></div>
                             </form>
                         </div>
-                    </aside><!-- ttm_widget_team_search-2 end -->
+                    </aside>
+                    
+                    <!-- ttm_widget_team_search-2 end -->
                     <!-- enhanced-text-widget -->
                     <aside id="enhancedtextwidget-10" class="widget-odd widget-5 widget widget_text enhanced-text-widget">
                         <h3 class="widget-title">Opening Hours:</h3>
@@ -157,7 +159,7 @@
                             </div>
                             <nav id="menu" class="menu">
                                 <ul class="dropdown">
-                                   <li class="active"><a href="index.html">Home</a>
+                                   <li id="home"><a href="index.html">Home</a>
                                         <ul>
                                             <li class="active"><a href="index.html">Homepage 1</a></li>
                                             <li><a href="home-2.html">Homepage 2</a></li>
@@ -177,8 +179,8 @@
                                     </li>
                                     <li><a href="#">Pages</a>
                                         <ul>
-                                            <li><a href="aboutus-1.html">About Us</a></li>
-                                            <li><a href="aboutus-2.html">About Us 2</a></li>
+                                            <li><a href="aboutus.html">About Us</a></li>
+                                           
                                             <li><a href="services.html">Services</a></li>
                                    
                                             <li><a href="contact-us-2.html">Contact Us 2</a></li>
@@ -237,8 +239,8 @@
                                             <li><a href="single-blog.html">Blog Single View</a></li>
                                         </ul>
                                     </li>
-                                
-                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li id="about"><a href="aboutus.html">About Us </a></li>
+                                    <li id="contactus"><a href="contact-us.html">Contact Us</a></li>
                                 
                                 </ul>
                                   
@@ -469,5 +471,16 @@ $(window).scroll(function(){
 
         jQuery("header:not(.ttm-header-style-classic-overlay) #site-header-menu #site-navigation .menu > ul").append("<li class='ttm-sepline'><span class='sep-img'></span></li>");delmont_menuhover_item()
 
+console.log(location.pathname.split('/').slice(-1)[0])
+
+if(location.pathname.split('/').slice(-1)[0] === "index.html"){
+    $( "#home" ).addClass( 'active');
+} else if(location.pathname.split('/').slice(-1)[0] === "aboutus.html"){
+    
+    $( "#about" ).addClass( 'active');
+}else if(location.pathname.split('/').slice(-1)[0] === "contact-us.html"){
+    
+    $( "#contactus" ).addClass( 'active');
+}
 
 </script>
