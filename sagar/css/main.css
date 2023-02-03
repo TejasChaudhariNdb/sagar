@@ -1,5 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Saira:100,200,300,400,500,600,700,800,900);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	font-family: 'Roboto';
+}
+
 
 article,
 aside,
@@ -170,7 +174,7 @@ ul {
 }
 
 body {
-	font-family: Ubuntu, Tahoma, Geneva, sans-serif;
+	font-family:'Roboto' !important;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 25px;
